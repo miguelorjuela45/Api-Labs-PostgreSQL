@@ -20,8 +20,8 @@ public class UsuariosService implements IUsuariosService {
 	}
 	
 	@Override
-	public Usuarios add(Usuarios p) {
-		return repositorio.save(p);	
+	public Usuarios add(Usuarios u) {
+		return repositorio.save(u);	
 	}
 	
 	@Override

@@ -36,8 +36,8 @@ public class UsuariosController {
 	}
 
 	@PostMapping
-	public Usuarios agregar(@RequestBody Usuarios p) {
-		p.setId(null);
-		return service.add(p);
+	public Usuarios agregar(@RequestBody Usuarios u) {
+		u.setIdUsuario(null);
+		return service.add(u);
 	}
 }
