@@ -3,29 +3,29 @@ package co.web.project.entity;
 import javax.persistence.*;
 
 @Entity// Anotaciones de String
-@Table(name = "Ususarios")//Nombre de la tabla de la BD
+@Table(name = "Usuarios")//Nombre de la tabla de la BD
 public class Usuarios {
 	//Atribbutos identicos de la tabla
 		@Id
 		@Column
 		@GeneratedValue(strategy = GenerationType.IDENTITY) //Genera el Id
-	    private Long idUsuario;
+	    private Integer idUsuario;
 		@Column
 		private String Usuario;
 		@Column
 		private String Contrasena;
 		@Column
-		private Long TipoUsuario;
+		private Integer TipoUsuario;
 		@Column
 		private String Nombre;
 		@Column
 		private String Apellido;
 		
 		
-		public Long getIdUsuario() {
+		public Integer getIdUsuario() {
 			return idUsuario;
 		}
-		public void setIdUsuario(Long idUsuario) {
+		public void setIdUsuario(Integer idUsuario) {
 			this.idUsuario = idUsuario;
 		}
 		public String getUsuario() {
@@ -40,10 +40,10 @@ public class Usuarios {
 		public void setContrasena(String Contrasena) {
 			this.Contrasena = Contrasena;
 		}
-		public Long getTipoUsuario() {
+		public Integer getTipoUsuario() {
 			return TipoUsuario;
 		}
-		public void setTipoUsuario(long TipoUsuario) {
+		public void setTipoUsuario(Integer TipoUsuario) {
 			this.TipoUsuario = TipoUsuario;
 		}
 		public String getNombre() {

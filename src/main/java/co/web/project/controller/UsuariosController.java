@@ -17,8 +17,7 @@ import co.web.project.entity.Usuarios;
 import co.web.project.service.IUsuariosService;
 
 //Direcciona directamente al proyecto front
-//@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
-@CrossOrigin(origins = "http://localhost:8080", maxAge = 3600)
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping({ "/Usuarios" }) // Mapping principal del puerto 8080
 public class UsuariosController {
