@@ -36,7 +36,13 @@ public class SolicitudController {
 
 	@PostMapping
 	public Solicitudes agregar(@RequestBody Solicitudes s) {
-		s.setIdUsuario(null);
+		s.setidSolicitud(null);
 		return service.add(s);
+	}
+	
+	@PutMapping(path = { "/{id}" })
+	public Solicitudes editar(@RequestBody Solicitudes s, @PathVariable("id") Integer id) {
+		s.setidSolicitud(id);;
+		return service.edit(s);
 	}
 }

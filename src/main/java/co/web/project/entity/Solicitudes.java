@@ -19,7 +19,9 @@ public class Solicitudes {
 		@Column
 		private Date HoraFinal;
 		@Column
-		private Integer IdUsuario;
+		private Integer UsuarioSolicita;
+		@Column
+		private Integer AuxliarAprueba;
 		
 		
 		public Integer getidSolicitud() {
@@ -46,13 +48,19 @@ public class Solicitudes {
 		public void setHoraFinal(Date HoraFinal) {
 			this.HoraFinal = HoraFinal;
 		}
-		public Integer getIdUsuario() {
-			return IdUsuario;
+		public Integer getUsuarioSolicita() {
+			return UsuarioSolicita;
 		}
-		public void setIdUsuario(Integer IdUsuario) {
-			this.IdUsuario = IdUsuario;
+		public void setUsuarioSolicita(Integer UsuarioSolicita) {
+			this.UsuarioSolicita = UsuarioSolicita;
+		}
+		public Integer getAuxliarAprueba() {
+			return AuxliarAprueba;
+		}
+		public void setAuxliarAprueba(Integer AuxliarAprueba) {
+			this.AuxliarAprueba = AuxliarAprueba;
 		}
 		public String toString() {
-			return "Customer [idSolicitud=" + this.idSolicitud + ", CodigoLaboratorio=" + this.CodigoLaboratorio + ", HoraInicio=" + this.HoraInicio + ", HoraFinal=" + this.HoraFinal + ", IdUsuario=" + this.IdUsuario + "]";
+			return "Customer [idSolicitud=" + this.idSolicitud + ", CodigoLaboratorio=" + this.CodigoLaboratorio + ", HoraInicio=" + this.HoraInicio + ", HoraFinal=" + this.HoraFinal + ", UsuarioSolicita=" + this.UsuarioSolicita + ", AuxiliarAprueba=" + this.AuxliarAprueba + "]";
 		}
 }

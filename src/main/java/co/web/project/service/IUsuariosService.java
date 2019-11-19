@@ -6,6 +6,6 @@ import co.web.project.entity.Usuarios;
 
 public interface IUsuariosService {
 	public List <Usuarios> getAllList();
-    public Usuarios getById(long id);
+    public Usuarios getById(Integer id);
     Usuarios add(Usuarios u);
 }

@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import co.web.project.service.ISolicitudesService;
 import co.web.project.repository.ISolicitudesRepository;
 import co.web.project.entity.Solicitudes;
@@ -27,5 +28,10 @@ public class SolicitudesService implements ISolicitudesService {
 	@Override
 	public Solicitudes getById(long id) {
       return repositorio.findById(id).get();
+	}
+	
+	@Override
+	public Solicitudes edit(Solicitudes s) {
+		return repositorio.save(s);
 	}
 }

@@ -25,7 +25,7 @@ public class UsuariosService implements IUsuariosService {
 	}
 	
 	@Override
-	public Usuarios getById(long id) {
+	public Usuarios getById(Integer id) {
       return repositorio.findById(id).get();
 	}
 }
