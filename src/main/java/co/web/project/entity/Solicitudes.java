@@ -11,7 +11,7 @@ public class Solicitudes {
 		@Id
 		@Column
 		@GeneratedValue(strategy = GenerationType.IDENTITY) //Genera el Id
-	    private Integer idSolicitud;
+	    private Long idSolicitud;
 		@Column
 		private Date fecha_solicitud;
 		@Column
@@ -68,11 +68,11 @@ public class Solicitudes {
 					", estado_solicitud=" + this.estado_solicitud + "]";
 		}
 
-		public Integer getIdSolicitud() {
+		public Long getIdSolicitud() {
 			return idSolicitud;
 		}
 
-		public void setIdSolicitud(Integer idSolicitud) {
+		public void setIdSolicitud(Long idSolicitud) {
 			this.idSolicitud = idSolicitud;
 		}
 

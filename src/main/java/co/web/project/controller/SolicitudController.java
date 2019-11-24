@@ -30,7 +30,7 @@ public class SolicitudController {
 	}
 
 	@GetMapping(path = "/{id}")
-	public Solicitudes getById(@PathVariable("id") Integer id) {
+	public Solicitudes getById(@PathVariable("id") long id) {
 		return service.getById(id);
 	}
 
@@ -41,7 +41,7 @@ public class SolicitudController {
 	}
 	
 	@PutMapping(path = { "/{id}" })
-	public Solicitudes editar(@RequestBody Solicitudes s, @PathVariable("id") Integer id) {
+	public Solicitudes editar(@RequestBody Solicitudes s, @PathVariable("id") long id) {
 		s.setIdSolicitud(id);;
 		return service.edit(s);
 	}
