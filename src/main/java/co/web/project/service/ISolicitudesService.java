@@ -8,5 +8,5 @@ public interface ISolicitudesService {
 	public List <Solicitudes> getAllList();
     public Solicitudes getById(long id);
     Solicitudes add(Solicitudes u);
-    Solicitudes edit(Solicitudes p);
+    Solicitudes edit(Solicitudes s);
 }
