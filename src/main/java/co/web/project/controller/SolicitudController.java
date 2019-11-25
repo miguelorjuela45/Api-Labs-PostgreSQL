@@ -37,6 +37,7 @@ public class SolicitudController {
 	@PostMapping
 	public Solicitudes agregar(@RequestBody Solicitudes s) {
 		s.setIdSolicitud(null);
+		s.setEstado_solicitud("Pendiente");
 		return service.add(s);
 	}
 	

@@ -19,6 +19,8 @@ public class Solicitudes {
 		@Column
 		private String laboratorio;
 		@Column
+		private String bloque;
+		@Column
 		private String asignatura;
 		@Column
 		private String docente;
@@ -98,6 +100,14 @@ public class Solicitudes {
 
 		public void setLaboratorio(String laboratorio) {
 			this.laboratorio = laboratorio;
+		}
+
+		public String getBloque() {
+			return bloque;
+		}
+
+		public void setBloque(String bloque) {
+			this.bloque = bloque;
 		}
 
 		public String getAsignatura() {
