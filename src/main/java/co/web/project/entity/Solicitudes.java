@@ -17,15 +17,15 @@ public class Solicitudes {
 		@Column
 		private Date fecha_programada;
 		@Column
-		private Integer laboratorio;
+		private String laboratorio;
 		@Column
 		private String asignatura;
 		@Column
-		private Integer docente;
+		private String docente;
 		@Column
 		private String practica;
 		@Column
-		private Integer facultad;
+		private String facultad;
 		@Column
 		private boolean maquinas;
 		@Column
@@ -45,7 +45,7 @@ public class Solicitudes {
 		@Column
 		private String hora_salida;
 		@Column
-		private Integer estado_solicitud;
+		private String estado_solicitud;
 		
 		public String toString() {
 			return "Customer [idSolicitud=" + this.idSolicitud + 
@@ -92,11 +92,11 @@ public class Solicitudes {
 			this.fecha_programada = fecha_programada;
 		}
 
-		public Integer getLaboratorio() {
+		public String getLaboratorio() {
 			return laboratorio;
 		}
 
-		public void setLaboratorio(Integer laboratorio) {
+		public void setLaboratorio(String laboratorio) {
 			this.laboratorio = laboratorio;
 		}
 
@@ -108,11 +108,11 @@ public class Solicitudes {
 			this.asignatura = asignatura;
 		}
 
-		public Integer getDocente() {
+		public String getDocente() {
 			return docente;
 		}
 
-		public void setDocente(Integer docente) {
+		public void setDocente(String docente) {
 			this.docente = docente;
 		}
 
@@ -124,11 +124,11 @@ public class Solicitudes {
 			this.practica = practica;
 		}
 
-		public Integer getFacultad() {
+		public String getFacultad() {
 			return facultad;
 		}
 
-		public void setFacultad(Integer facultad) {
+		public void setFacultad(String facultad) {
 			this.facultad = facultad;
 		}
 
@@ -204,11 +204,11 @@ public class Solicitudes {
 			this.hora_salida = hora_salida;
 		}
 
-		public Integer getEstado_solicitud() {
+		public String getEstado_solicitud() {
 			return estado_solicitud;
 		}
 
-		public void setEstado_solicitud(Integer estado_solicitud) {
+		public void setEstado_solicitud(String estado_solicitud) {
 			this.estado_solicitud = estado_solicitud;
 		}
 }

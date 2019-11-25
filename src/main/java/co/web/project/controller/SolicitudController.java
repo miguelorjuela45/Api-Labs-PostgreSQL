@@ -40,9 +40,16 @@ public class SolicitudController {
 		return service.add(s);
 	}
 	
-	@PutMapping(path = { "/{id}" })
-	public Solicitudes editar(@RequestBody Solicitudes s, @PathVariable("id") long id) {
-		s.setIdSolicitud(id);;
+	@PutMapping(path = { "/aprobar/{id}" })
+	public Solicitudes aprobar(@RequestBody Solicitudes s, @PathVariable("id") long id) {
+		s.setIdSolicitud(id);
+		s.setEstado_solicitud("Aprobado");
+		return service.edit(s);
+	}
+	@PutMapping(path = { "/rechazar/{id}" })
+	public Solicitudes rechazar(@RequestBody Solicitudes s, @PathVariable("id") long id) {
+		s.setIdSolicitud(id);
+		s.setEstado_solicitud("Rechazado");
 		return service.edit(s);
 	}
 }
